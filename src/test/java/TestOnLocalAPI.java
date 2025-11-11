@@ -1,11 +1,7 @@
 import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
-import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
-import io.restassured.response.Response;
 import org.json.simple.JSONObject;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -35,6 +31,8 @@ public class TestOnLocalAPI {
         when().
                 post("/users").
         then().
+                body("firstName", equalTo("John")).
+                body("id", notNullValue()).
                 statusCode(201).
                 log().all();
     }
@@ -52,8 +50,10 @@ public class TestOnLocalAPI {
                 accept(ContentType.JSON).
                 body(requset.toJSONString()).
         when().
-                put("/users/4eb5").
+                put("/users/e186").
         then().
+                body("firstName", equalTo("omar")).
+                body("id", notNullValue()).
                 statusCode(200).
                 log().all();
     }
@@ -70,8 +70,10 @@ public class TestOnLocalAPI {
                 accept(ContentType.JSON).
                 body(requset.toJSONString()).
         when().
-                patch("/users/4eb5").
+                patch("/users/161a").
         then().
+                body("firstName", equalTo("Omar")).
+                body("id", notNullValue()).
                 statusCode(200).
                 log().all();
     }
@@ -81,7 +83,7 @@ public class TestOnLocalAPI {
         baseURI = "http://localhost:3000";
 
             when().
-                delete("/users/3").
+                delete("/users/8885").
             then().
                 statusCode(200).
                 log().all();

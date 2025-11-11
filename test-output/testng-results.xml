@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-11T15:26:46 EET" name="Default Suite" finished-at="2025-11-11T15:26:53 EET" duration-ms="6701">
+    <groups>
+    </groups>
+    <test started-at="2025-11-11T15:26:46 EET" name="RESTAssuredAutomation" finished-at="2025-11-11T15:26:53 EET" duration-ms="6701">
+      <class name="TestOnReqres">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestOnReqres@73a1e9a9]" started-at="2025-11-11T15:26:46 EET" name="setup" finished-at="2025-11-11T15:26:47 EET" duration-ms="1193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDelete()[pri:0, instance:TestOnReqres@73a1e9a9]" started-at="2025-11-11T15:26:47 EET" name="testDelete" finished-at="2025-11-11T15:26:50 EET" duration-ms="2802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+        <test-method signature="testGet()[pri:0, instance:TestOnReqres@73a1e9a9]" started-at="2025-11-11T15:26:50 EET" name="testGet" finished-at="2025-11-11T15:26:52 EET" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGet -->
+        <test-method signature="testPatch()[pri:0, instance:TestOnReqres@73a1e9a9]" started-at="2025-11-11T15:26:52 EET" name="testPatch" finished-at="2025-11-11T15:26:52 EET" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPatch -->
+        <test-method signature="testPost()[pri:0, instance:TestOnReqres@73a1e9a9]" started-at="2025-11-11T15:26:52 EET" name="testPost" finished-at="2025-11-11T15:26:53 EET" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPost -->
+        <test-method signature="testPut()[pri:0, instance:TestOnReqres@73a1e9a9]" started-at="2025-11-11T15:26:53 EET" name="testPut" finished-at="2025-11-11T15:26:53 EET" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPut -->
+      </class> <!-- TestOnReqres -->
+    </test> <!-- RESTAssuredAutomation -->
+  </suite> <!-- Default Suite -->
+</testng-results>
